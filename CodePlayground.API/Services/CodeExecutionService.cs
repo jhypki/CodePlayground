@@ -30,7 +30,6 @@ public class CodeExecutionService(DockerClient dockerClient) : ICodeExecutionSer
             ],
             HostConfig = new HostConfig
             {
-                AutoRemove = true,
                 Memory = 512 * 1024 * 1024,
                 NanoCPUs = 500_000_000
             }
@@ -40,13 +39,16 @@ public class CodeExecutionService(DockerClient dockerClient) : ICodeExecutionSer
 
         await dockerClient.Containers.StartContainerAsync(container.ID, new ContainerStartParameters());
 
-        var (stdout, stderr) = await GetContainerLogsAsync(container.ID);
+        var (stdout, stderr, exitCode) = await GetContainerLogsAsync(container.ID);
+
+        await dockerClient.Containers.StopContainerAsync(container.ID, new ContainerStopParameters());
+        await dockerClient.Containers.RemoveContainerAsync(container.ID, new ContainerRemoveParameters());
 
         return new CodeExecutionResult
         {
             StdOut = stdout,
             StdErr = stderr,
-            ExitCode = 0
+            ExitCode = exitCode
         };
     }
 
@@ -67,7 +69,7 @@ public class CodeExecutionService(DockerClient dockerClient) : ICodeExecutionSer
             );
     }
 
-    private async Task<(string stdout, string stderr)> GetContainerLogsAsync(string containerId)
+    private async Task<(string stdout, string stderr, long exitCode)> GetContainerLogsAsync(string containerId)
     {
         var logStream = await dockerClient.Containers.GetContainerLogsAsync(containerId,
             false,
@@ -78,8 +80,24 @@ public class CodeExecutionService(DockerClient dockerClient) : ICodeExecutionSer
                 ShowStderr = true
             });
 
-        var (stdout, stderr) = await logStream.ReadOutputToEndAsync(CancellationToken.None);
+        var stdout = new MemoryStream();
+        var stderr = new MemoryStream();
 
-        return (stdout, stderr);
+        await logStream.CopyOutputToAsync(null, stdout, stderr, CancellationToken.None);
+
+        stdout.Seek(0, SeekOrigin.Begin);
+        stderr.Seek(0, SeekOrigin.Begin);
+
+        var stdoutResult = await new StreamReader(stdout).ReadToEndAsync();
+        var stderrResult = await new StreamReader(stderr).ReadToEndAsync();
+
+        var containerInspect = await dockerClient.Containers.InspectContainerAsync(containerId);
+        var exitCode = containerInspect.State.ExitCode;
+
+        Console.WriteLine($"StdOut: {stdoutResult}");
+        Console.WriteLine($"StdErr: {stderrResult}");
+        Console.WriteLine($"ExitCode: {exitCode}");
+
+        return (stdoutResult, stderrResult, exitCode);
     }
 }

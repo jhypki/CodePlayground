@@ -44,3 +44,4 @@
 /Users/jakubhypki/Dev/CodePlayground/CodePlayground.API/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
 /Users/jakubhypki/Dev/CodePlayground/CodePlayground.API/bin/Debug/net8.0/CodePlayground.Core.dll
 /Users/jakubhypki/Dev/CodePlayground/CodePlayground.API/bin/Debug/net8.0/CodePlayground.Core.pdb
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.API/obj/Debug/net8.0/CodePlayground.API.sourcelink.json

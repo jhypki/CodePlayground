@@ -13,6 +13,9 @@ public class LanguageHandlerFactory
             SupportedLanguages.Python => new PythonHandler(),
             SupportedLanguages.JavaScript => new JavaScriptHandler(),
             SupportedLanguages.CSharp => new CSharpHandler(),
+            SupportedLanguages.Go => new GoHandler(),
+            SupportedLanguages.TypeScript => new TypeScriptHandler(),
+            SupportedLanguages.Cpp => new CppHandler(),
             _ => throw new NotImplementedException()
         };
     }

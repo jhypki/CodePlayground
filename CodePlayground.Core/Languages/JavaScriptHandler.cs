@@ -1,3 +1,5 @@
+using CodePlayground.Core.Enums;
+using CodePlayground.Core.Helpers;
 using CodePlayground.Core.Interfaces;
 
 namespace CodePlayground.Core.Languages;
@@ -6,7 +8,7 @@ public class JavaScriptHandler : ILanguageHandler
 {
     public string GetDockerImage()
     {
-        return "node:14";
+        return EnumHelper.GetEnumStringValue(DockerImages.JavaScript);
     }
 
     public string GetExecutionCommand(string code)

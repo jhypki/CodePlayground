@@ -1,0 +1,3 @@
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/publish/CodePlayground.Core.dll
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/publish/CodePlayground.Core.deps.json
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/publish/CodePlayground.Core.pdb

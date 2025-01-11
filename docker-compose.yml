@@ -3,10 +3,54 @@
     image: codeplayground
     build:
       context: .
-      dockerfile: CodePlayground/Dockerfile
+      dockerfile: CodePlayground.API/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      DOTNET_ENVIRONMENT: Development
+      ASPNETCORE_URLS: "http://+:8080"
+    volumes:
+      - csharp-project:/code/csharp
+      - python-project:/code/python
+      - javascript-project:/code/javascript
+      - typescript-project:/code/typescript
+      - go-project:/code/go
+      - /var/run/docker.sock:/var/run/docker.sock
 
-  codeplayground.core:
-    image: codeplayground.core
+  csharp:
     build:
-      context: .
-      dockerfile: CodePlayground.Core/Dockerfile
+      context: ./Docker/csharp
+    image: code-playground/csharp
+
+  python:
+    build:
+      context: ./Docker/python
+    image: code-playground/python
+
+  javascript:
+    build:
+      context: ./Docker/javascript
+    image: code-playground/javascript
+
+  typescript:
+    build:
+      context: ./Docker/typescript
+    image: code-playground/typescript
+
+  go:
+    build:
+      context: ./Docker/go
+    image: code-playground/go
+
+  cpp:
+    build:
+      context: ./Docker/cpp
+    image: code-playground/cpp
+
+volumes:
+  csharp-project:
+  python-project:
+  javascript-project:
+  typescript-project:
+  go-project:
+  cpp-project:

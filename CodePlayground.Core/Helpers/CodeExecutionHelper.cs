@@ -18,8 +18,8 @@ public static class CodeExecutionHelper
     public static string GetCommandForLanguage(SupportedLanguages language, string code)
     {
         var sanitizedCode = code
-            .Replace("'", "'\"'\"'") // Escape single quotes for shell compatibility
-            .Replace("\n", "\\n"); // Replace newlines with literal "\n" for shell
+            .Replace("'", "'\"'\"'")
+            .Replace("\n", "\\n");
 
         return language switch
         {

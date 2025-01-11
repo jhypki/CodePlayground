@@ -1,3 +1,5 @@
+using CodePlayground.Core.Enums;
+using CodePlayground.Core.Helpers;
 using CodePlayground.Core.Interfaces;
 
 namespace CodePlayground.Core.Languages;
@@ -6,7 +8,7 @@ public class PythonHandler : ILanguageHandler
 {
     public string GetDockerImage()
     {
-        return "python:3.9";
+        return EnumHelper.GetEnumStringValue(DockerImages.Python);
     }
 
     public string GetExecutionCommand(string code)
