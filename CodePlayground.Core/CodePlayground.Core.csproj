@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="DockerEnvironments\"/>
+        <PackageReference Include="Docker.DotNet" Version="3.125.15"/>
     </ItemGroup>
 
 </Project>

@@ -334,6 +334,9 @@
       "CodePlayground.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Docker.DotNet": "3.125.15"
+        },
         "compile": {
           "bin/placeholder/CodePlayground.Core.dll": {}
         },

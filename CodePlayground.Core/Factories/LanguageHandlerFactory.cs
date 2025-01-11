@@ -4,7 +4,7 @@ using CodePlayground.Core.Languages;
 
 namespace CodePlayground.Core.Factories;
 
-public class LanguageHandlerFactory
+public abstract class LanguageHandlerFactory
 {
     public static ILanguageHandler GetHandler(SupportedLanguages language)
     {

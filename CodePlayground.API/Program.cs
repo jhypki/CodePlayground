@@ -1,6 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using CodePlayground.API.Services;
+using CodePlayground.Core.Docker;
 using CodePlayground.Core.Interfaces;
 using Docker.DotNet;
 
@@ -14,11 +15,15 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 });
 ;
 
+builder.Services.AddSingleton<IDockerManager, DockerManager>();
 builder.Services.AddSingleton<DockerClient>(sp =>
 {
-    var dockerUri = new Uri("unix:///var/run/docker.sock"); // Use "npipe://./pipe/docker_engine" for Windows
-    return new DockerClientConfiguration(dockerUri).CreateClient();
+    var dockerUri =
+        Environment.GetEnvironmentVariable("DOCKER_URI") ?? "unix:///var/run/docker.sock"; // Default for Linux/macOS
+    return new DockerClientConfiguration(new Uri(dockerUri)).CreateClient();
 });
+
+
 builder.Services.AddScoped<ICodeExecutionService, CodeExecutionService>();
 
 var app = builder.Build();
