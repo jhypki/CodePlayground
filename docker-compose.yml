@@ -1,0 +1,12 @@
+﻿services:
+  codeplayground:
+    image: codeplayground
+    build:
+      context: .
+      dockerfile: CodePlayground/Dockerfile
+
+  codeplayground.core:
+    image: codeplayground.core
+    build:
+      context: .
+      dockerfile: CodePlayground.Core/Dockerfile

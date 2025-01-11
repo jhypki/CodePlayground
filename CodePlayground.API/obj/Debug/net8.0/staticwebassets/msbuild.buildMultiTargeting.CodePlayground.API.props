@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/CodePlayground.API.props" />
+</Project>

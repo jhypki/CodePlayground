@@ -1,0 +1,11 @@
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/bin/Debug/net8.0/CodePlayground.Core.deps.json
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/bin/Debug/net8.0/CodePlayground.Core.dll
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/bin/Debug/net8.0/CodePlayground.Core.pdb
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/obj/Debug/net8.0/CodePlayground.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/obj/Debug/net8.0/CodePlayground.Core.AssemblyInfoInputs.cache
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/obj/Debug/net8.0/CodePlayground.Core.AssemblyInfo.cs
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/obj/Debug/net8.0/CodePlayground.Core.csproj.CoreCompileInputs.cache
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/obj/Debug/net8.0/CodePlayground.Core.dll
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/obj/Debug/net8.0/refint/CodePlayground.Core.dll
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/obj/Debug/net8.0/CodePlayground.Core.pdb
+/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/obj/Debug/net8.0/ref/CodePlayground.Core.dll
