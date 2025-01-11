@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using CodePlayground.API.Middleware;
 using CodePlayground.API.Services;
 using CodePlayground.Core.Docker;
 using CodePlayground.Core.Interfaces;
@@ -28,11 +29,14 @@ builder.Services.AddScoped<ICodeExecutionService, CodeExecutionService>();
 
 var app = builder.Build();
 
+app.UseMiddleware<ErrorHandlingMiddleware>();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 
 app.UseHttpsRedirection();
 

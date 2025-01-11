@@ -1,6 +1,0 @@
-@CodePlayground_HostAddress = http://localhost:5245
-
-GET {{CodePlayground_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

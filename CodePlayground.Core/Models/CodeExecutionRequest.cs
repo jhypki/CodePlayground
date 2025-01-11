@@ -1,9 +1,9 @@
-using CodePlayground.Core.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CodePlayground.Core.Models;
 
 public class CodeExecutionRequest
 {
-    public SupportedLanguages Language { get; set; }
-    public string? Code { get; set; }
+    [Required] public string? Language { get; set; }
+    [Required] public string? Code { get; set; }
 }

@@ -1,3 +1,4 @@
+using CodePlayground.Core.Enums;
 using CodePlayground.Core.Factories;
 using CodePlayground.Core.Interfaces;
 using CodePlayground.Core.Models;
@@ -8,10 +9,13 @@ public class CodeExecutionService(IDockerManager dockerManager) : ICodeExecution
 {
     public async Task<CodeExecutionResult> ExecuteCodeAsync(CodeExecutionRequest request)
     {
-        var handler = LanguageHandlerFactory.GetHandler(request.Language);
+        if (!Enum.TryParse<SupportedLanguages>(request.Language, true, out var parsedLanguage) ||
+            !Enum.IsDefined(typeof(SupportedLanguages), parsedLanguage))
+            throw new ArgumentException($"Unsupported language: {request.Language}");
+
+        var handler = LanguageHandlerFactory.GetHandler(parsedLanguage);
 
         var image = handler.GetDockerImage();
-        if (image == null) throw new ArgumentException("Unsupported language");
 
         var command = handler.GetExecutionCommand(request.Code ?? string.Empty);
 
