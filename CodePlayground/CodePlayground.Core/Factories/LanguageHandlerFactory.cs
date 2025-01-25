@@ -24,10 +24,6 @@ public abstract class LanguageHandlerFactory
     SupportedLanguages.Perl => new PerlHandler(),
     SupportedLanguages.Elixir => new ElixirHandler(),
     SupportedLanguages.Julia => new JuliaHandler(),
-    SupportedLanguages.Haskell => new HaskellHandler(),
-    SupportedLanguages.Lua => new LuaHandler(),
-    SupportedLanguages.Groovy => new GroovyHandler(),
-    SupportedLanguages.C => new CHandler(),
             _ => throw new NotImplementedException()
         };
     }

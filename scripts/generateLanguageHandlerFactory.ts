@@ -5,7 +5,7 @@ import languages from "../languages.json";
 export const generateLanguageHandlerFactory = (): void => {
   const factoriesDir = path.join(
     process.cwd(),
-    "../CodePlayground.Core/Factories"
+    "../CodePlayground/CodePlayground.Core/Factories"
   );
 
   const fileContent = `using CodePlayground.Core.Enums;

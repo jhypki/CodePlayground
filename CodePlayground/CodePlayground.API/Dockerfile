@@ -10,14 +10,14 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Step 1: Copy the project file and restore dependencies
-COPY ["CodePlayground.API/CodePlayground.API.csproj", "CodePlayground.API/"]
+COPY ["CodePlayground/CodePlayground.API/CodePlayground.API.csproj", "CodePlayground.API/"]
 RUN dotnet restore "CodePlayground.API/CodePlayground.API.csproj"
 
 # Step 2: Copy the entire source code
 COPY . .
 
 # Step 3: Set the working directory to where the .csproj file is located
-WORKDIR "/src/CodePlayground.API"
+WORKDIR "/src/CodePlayground/CodePlayground.API"
 
 # Step 4: Build the application
 RUN dotnet build "CodePlayground.API.csproj" -c $BUILD_CONFIGURATION -o /app/build

@@ -5,7 +5,7 @@ import languages from "../languages.json";
 export const generateHandlers = (): void => {
   const handlersDir = path.join(
     process.cwd(),
-    "../CodePlayground.Core/Languages"
+    "../CodePlayground/CodePlayground.Core/Languages"
   );
 
   for (const language of languages) {

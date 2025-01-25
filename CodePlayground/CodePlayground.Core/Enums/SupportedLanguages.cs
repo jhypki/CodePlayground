@@ -19,8 +19,4 @@ public enum SupportedLanguages
     [EnumMember(Value = "perl")] Perl,
     [EnumMember(Value = "elixir")] Elixir,
     [EnumMember(Value = "julia")] Julia,
-    [EnumMember(Value = "haskell")] Haskell,
-    [EnumMember(Value = "lua")] Lua,
-    [EnumMember(Value = "groovy")] Groovy,
-    [EnumMember(Value = "c")] C,
 }

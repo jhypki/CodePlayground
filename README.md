@@ -76,9 +76,5 @@ Below is the list of supported languages, taken from `languages.json`:
 - **Perl** (image: `perl:5.36`, language: `perl`)
 - **Elixir** (image: `elixir:1.14`, language: `elixir`)
 - **Julia** (image: `julia:1.8`, language: `julia`)
-- **Haskell** (image: `haskell:9.0`, language: `haskell`)
-- **Lua** (image: `lua:5.4`, language: `lua`)
-- **Groovy** (image: `groovy:3.0`, language: `groovy`)
-- **C** (image: `gcc:11`, language: `c`)
 
 
