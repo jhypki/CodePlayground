@@ -44,7 +44,7 @@ ${codeplaygroundService}${languageServices}volumes:
 ${volumes}
 `;
 
-  const outputPath = path.join(process.cwd(), "../docker-compose.yml");
+  const outputPath = path.join(__dirname, "../docker-compose.yml");
   fs.writeFileSync(outputPath, finalCompose, "utf8");
   console.log(`✅  Generated docker-compose file at: ${outputPath}`);
 };

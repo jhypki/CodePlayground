@@ -27,6 +27,10 @@ services:
       - perl-project:/code/perl
       - elixir-project:/code/elixir
       - julia-project:/code/julia
+      - haskell-project:/code/haskell
+      - lua-project:/code/lua
+      - groovy-project:/code/groovy
+      - c-project:/code/c
       - /var/run/docker.sock:/var/run/docker.sock
   javascript:
     build:
@@ -103,6 +107,26 @@ services:
       context: ./docker/julia
     image: code-playground/julia
 
+  haskell:
+    build:
+      context: ./docker/haskell
+    image: code-playground/haskell
+
+  lua:
+    build:
+      context: ./docker/lua
+    image: code-playground/lua
+
+  groovy:
+    build:
+      context: ./docker/groovy
+    image: code-playground/groovy
+
+  c:
+    build:
+      context: ./docker/c
+    image: code-playground/c
+
 volumes:
   javascript-project:
   csharp-project:
@@ -119,4 +143,8 @@ volumes:
   perl-project:
   elixir-project:
   julia-project:
+  haskell-project:
+  lua-project:
+  groovy-project:
+  c-project:
 

@@ -3,7 +3,7 @@ import fs from "fs";
 import languages from "../languages.json";
 
 export const generateSupportedLanguagesEnum = (): void => {
-  const enumsDir = path.join(process.cwd(), "../CodePlayground.Core/Enums");
+  const enumsDir = path.join(__dirname, "../CodePlayground.Core/Enums");
 
   const fileContent = `using System.Runtime.Serialization;
 

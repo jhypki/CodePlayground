@@ -3,10 +3,7 @@ import fs from "fs";
 import languages from "../languages.json";
 
 export const generateHandlers = (): void => {
-  const handlersDir = path.join(
-    process.cwd(),
-    "../CodePlayground.Core/Languages"
-  );
+  const handlersDir = path.join(__dirname, "../CodePlayground.Core/Languages");
 
   for (const language of languages) {
     fs.mkdirSync(handlersDir, { recursive: true });

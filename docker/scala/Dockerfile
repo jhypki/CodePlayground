@@ -1,3 +1,2 @@
-FROM scala:2.13
+FROM hseeberger/scala-sbt:11.0.12_1.5.5_2.13.8
 WORKDIR /code
-CMD ["sh", "-c", "sleep infinity"]
