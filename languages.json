@@ -1,0 +1,145 @@
+[
+    {
+        "language": "javascript",
+        "name": "JavaScript",
+        "dockerImage": "node:14",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/temp.js && node /code/temp.js",
+        "additionalDockerCommands": [],
+        "fileExtension": "js",
+        "template": "{code}"
+    },
+    {
+        "language": "csharp",
+        "name": "CSharp",
+        "dockerImage": "mcr.microsoft.com/dotnet/sdk:5.0",
+        "runCommand": "mkdir -p /code/TemplateProject && echo \\\"{base64Code}\\\" | base64 -d > /code/TemplateProject/Program.cs && cd /code/TemplateProject && dotnet run",
+        "additionalDockerCommands": [
+            "RUN dotnet new console -o /code/TemplateProject",
+            "RUN rm /code/TemplateProject/Program.cs",
+            "WORKDIR /code/TemplateProject",
+            "RUN dotnet restore",
+            "WORKDIR /code"
+        ],
+        "fileExtension": "cs",
+        "template": "using System; class Program {{ static void Main() {{ {code} }} }}"
+    },
+    {
+        "language": "python",
+        "name": "Python",
+        "dockerImage": "python:3.9",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/temp.py && python /code/temp.py",
+        "additionalDockerCommands": [],
+        "fileExtension": "py",
+        "template": "{code}"
+    },
+    {
+        "language": "typescript",
+        "name": "TypeScript",
+        "dockerImage": "node:18",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/temp.ts && tsc /code/temp.ts && node /code/temp.js",
+        "additionalDockerCommands": [
+            "RUN npm install -g typescript"
+        ],
+        "fileExtension": "ts",
+        "template": "{code}"
+    },
+    {
+        "language": "java",
+        "name": "Java",
+        "dockerImage": "openjdk:17",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/Main.java && cd /code && javac Main.java && java Main",
+        "additionalDockerCommands": [],
+        "fileExtension": "java",
+        "template": "public class Main {{ public static void main(String[] args) {{ {code} }} }}"
+    },
+    {
+        "language": "go",
+        "name": "Go",
+        "dockerImage": "golang:1.20",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/main.go && cd /code && go run main.go",
+        "additionalDockerCommands": [],
+        "fileExtension": "go",
+        "template": "package main import (\\\"fmt\\\") func main() {{ {code} }}"
+    },
+    {
+        "language": "ruby",
+        "name": "Ruby",
+        "dockerImage": "ruby:3.2",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/app.rb && ruby /code/app.rb",
+        "additionalDockerCommands": [],
+        "fileExtension": "rb",
+        "template": "{code}"
+    },
+    {
+        "language": "rust",
+        "name": "Rust",
+        "dockerImage": "rust:1.66",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/main.rs && cd /code && rustc main.rs && ./main",
+        "additionalDockerCommands": [],
+        "fileExtension": "rs",
+        "template": "{code}"
+    },
+    {
+        "language": "kotlin",
+        "name": "Kotlin",
+        "dockerImage": "zenika/kotlin",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/Main.kt && cd /code && kotlinc Main.kt -include-runtime -d main.jar && java -jar main.jar",
+        "additionalDockerCommands": [],
+        "fileExtension": "kt",
+        "template": "fun main() {{ {code} }}"
+    },
+    {
+        "language": "php",
+        "name": "PHP",
+        "dockerImage": "php:8.2-cli",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/index.php && php /code/index.php",
+        "additionalDockerCommands": [],
+        "fileExtension": "php",
+        "template": "<?php {code} ?>"
+    },
+    {
+        "language": "swift",
+        "name": "Swift",
+        "dockerImage": "swift:5.7",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/main.swift && swift /code/main.swift",
+        "additionalDockerCommands": [],
+        "fileExtension": "swift",
+        "template": "{code}"
+    },
+    {
+        "language": "bash",
+        "name": "Bash",
+        "dockerImage": "ubuntu:latest",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/script.sh && bash /code/script.sh",
+        "additionalDockerCommands": [],
+        "fileExtension": "sh",
+        "template": "{code}"
+    },
+    {
+        "language": "perl",
+        "name": "Perl",
+        "dockerImage": "perl:5.36",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/script.pl && perl /code/script.pl",
+        "additionalDockerCommands": [],
+        "fileExtension": "pl",
+        "template": "{code}"
+    },
+    {
+        "language": "elixir",
+        "name": "Elixir",
+        "dockerImage": "elixir:1.14",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/script.exs && elixir /code/script.exs",
+        "additionalDockerCommands": [],
+        "fileExtension": "exs",
+        "template": "{code}"
+    },
+    {
+        "language": "julia",
+        "name": "Julia",
+        "dockerImage": "julia:1.8",
+        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/script.jl && julia /code/script.jl",
+        "additionalDockerCommands": [],
+        "fileExtension": "jl",
+        "template": "{code}"
+    }
+]

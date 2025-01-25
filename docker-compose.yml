@@ -1,4 +1,6 @@
-﻿services:
+version: '3.9'
+
+services:
   codeplayground:
     image: codeplayground
     build:
@@ -10,47 +12,111 @@
       DOTNET_ENVIRONMENT: Development
       ASPNETCORE_URLS: "http://+:8080"
     volumes:
+      - javascript-project:/code/javascript
       - csharp-project:/code/csharp
       - python-project:/code/python
-      - javascript-project:/code/javascript
       - typescript-project:/code/typescript
+      - java-project:/code/java
       - go-project:/code/go
+      - ruby-project:/code/ruby
+      - rust-project:/code/rust
+      - kotlin-project:/code/kotlin
+      - php-project:/code/php
+      - swift-project:/code/swift
+      - bash-project:/code/bash
+      - perl-project:/code/perl
+      - elixir-project:/code/elixir
+      - julia-project:/code/julia
       - /var/run/docker.sock:/var/run/docker.sock
+  javascript:
+    build:
+      context: ./docker/javascript
+    image: code-playground/javascript
 
   csharp:
     build:
-      context: ./Docker/csharp
+      context: ./docker/csharp
     image: code-playground/csharp
 
   python:
     build:
-      context: ./Docker/python
+      context: ./docker/python
     image: code-playground/python
-
-  javascript:
-    build:
-      context: ./Docker/javascript
-    image: code-playground/javascript
 
   typescript:
     build:
-      context: ./Docker/typescript
+      context: ./docker/typescript
     image: code-playground/typescript
+
+  java:
+    build:
+      context: ./docker/java
+    image: code-playground/java
 
   go:
     build:
-      context: ./Docker/go
+      context: ./docker/go
     image: code-playground/go
 
-  cpp:
+  ruby:
     build:
-      context: ./Docker/cpp
-    image: code-playground/cpp
+      context: ./docker/ruby
+    image: code-playground/ruby
+
+  rust:
+    build:
+      context: ./docker/rust
+    image: code-playground/rust
+
+  kotlin:
+    build:
+      context: ./docker/kotlin
+    image: code-playground/kotlin
+
+  php:
+    build:
+      context: ./docker/php
+    image: code-playground/php
+
+  swift:
+    build:
+      context: ./docker/swift
+    image: code-playground/swift
+
+  bash:
+    build:
+      context: ./docker/bash
+    image: code-playground/bash
+
+  perl:
+    build:
+      context: ./docker/perl
+    image: code-playground/perl
+
+  elixir:
+    build:
+      context: ./docker/elixir
+    image: code-playground/elixir
+
+  julia:
+    build:
+      context: ./docker/julia
+    image: code-playground/julia
 
 volumes:
+  javascript-project:
   csharp-project:
   python-project:
-  javascript-project:
   typescript-project:
+  java-project:
   go-project:
-  cpp-project:
+  ruby-project:
+  rust-project:
+  kotlin-project:
+  php-project:
+  swift-project:
+  bash-project:
+  perl-project:
+  elixir-project:
+  julia-project:
+

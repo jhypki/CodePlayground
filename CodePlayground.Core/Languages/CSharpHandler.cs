@@ -1,28 +1,22 @@
 using CodePlayground.Core.Enums;
 using CodePlayground.Core.Helpers;
 using CodePlayground.Core.Interfaces;
+using System;
 
 namespace CodePlayground.Core.Languages;
-
 public class CSharpHandler : ILanguageHandler
 {
     public string GetDockerImage()
     {
-        return EnumHelper.GetEnumStringValue(DockerImages.CSharp);
+        return "code-playground/csharp";
     }
 
     public string GetExecutionCommand(string code)
     {
-        var sanitizedCode = code
-            .Replace("\"", "\\\"")
-            .Replace("'", "'\"'\"'")
-            .Replace("\n", "\\n");
+        var base64Code = CodeSanitizer.ToBase64(code);
 
-        return $"""
-                    mkdir -p /code/TemplateProject &&
-                    echo '{code}' > /code/TemplateProject/Program.cs &&
-                    cd /code/TemplateProject &&
-                    dotnet run
-                """;
+        var runCommand = $"mkdir -p /code/TemplateProject && echo \"{base64Code}\" | base64 -d > /code/TemplateProject/Program.cs && cd /code/TemplateProject && dotnet run";
+
+        return runCommand;
     }
 }

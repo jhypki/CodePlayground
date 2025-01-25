@@ -1,22 +1,22 @@
 using CodePlayground.Core.Enums;
 using CodePlayground.Core.Helpers;
 using CodePlayground.Core.Interfaces;
+using System;
 
 namespace CodePlayground.Core.Languages;
-
 public class PythonHandler : ILanguageHandler
 {
     public string GetDockerImage()
     {
-        return EnumHelper.GetEnumStringValue(DockerImages.Python);
+        return "code-playground/python";
     }
 
     public string GetExecutionCommand(string code)
     {
-        var sanitizedCode = code
-            .Replace("'", "'\"'\"'")
-            .Replace("\n", "\\n");
+        var base64Code = CodeSanitizer.ToBase64(code);
 
-        return $"mkdir -p /code && echo \"{sanitizedCode}\" > /code/temp.py && python /code/temp.py";
+        var runCommand = $"mkdir -p /code && echo \"{base64Code}\" | base64 -d > /code/temp.py && python /code/temp.py";
+
+        return runCommand;
     }
 }
