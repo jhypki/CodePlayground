@@ -3,7 +3,10 @@ import fs from "fs";
 import languages from "../languages.json";
 
 export const generateLanguageHandlerFactory = (): void => {
-  const factoriesDir = path.join(__dirname, "../CodePlayground.Core/Factories");
+  const factoriesDir = path.join(
+    process.cwd(),
+    "../CodePlayground.Core/Factories"
+  );
 
   const fileContent = `using CodePlayground.Core.Enums;
 using CodePlayground.Core.Interfaces;

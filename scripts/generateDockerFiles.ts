@@ -3,7 +3,7 @@ import fs from "fs";
 import languages from "../languages.json";
 
 export const generateDockerFiles = (): void => {
-  const dockerRootDir = path.join(__dirname, "../docker");
+  const dockerRootDir = path.join(process.cwd(), "../docker");
 
   for (const language of languages) {
     console.log(`Generating Dockerfile for ${language.name}`);

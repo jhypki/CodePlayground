@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const generateDockerFiles_1 = require("./generateDockerFiles");
+const generateHandlers_1 = require("./generateHandlers");
+const generateSupportedLanguagesEnum_1 = require("./generateSupportedLanguagesEnum");
+const generateLanguageHandlerFactory_1 = require("./generateLanguageHandlerFactory");
+const generateDockerCompose_1 = require("./generateDockerCompose");
+const generateReadme_1 = require("./generateReadme");
+(0, generateDockerFiles_1.generateDockerFiles)();
+(0, generateHandlers_1.generateHandlers)();
+(0, generateSupportedLanguagesEnum_1.generateSupportedLanguagesEnum)();
+(0, generateLanguageHandlerFactory_1.generateLanguageHandlerFactory)();
+(0, generateDockerCompose_1.generateDockerCompose)();
+(0, generateReadme_1.generateReadme)();
