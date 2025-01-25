@@ -1,11 +1,11 @@
-version: '3.9'
+﻿version: "3.9"
 
 services:
   codeplayground:
     image: codeplayground
     build:
       context: .
-      dockerfile: CodePlayground.API/Dockerfile
+      dockerfile: CodePlayground/CodePlayground.API/Dockerfile
     ports:
       - "8080:8080"
     environment:
@@ -147,4 +147,3 @@ volumes:
   lua-project:
   groovy-project:
   c-project:
-
