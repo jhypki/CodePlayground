@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodePlayground.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5078ba7902e2801cd6fd80362ac10c5c6080f809")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5345916b54a23224eab06d942f12c756116c39ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodePlayground.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodePlayground.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
