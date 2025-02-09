@@ -5,8 +5,5 @@
   &lt;Assembly Path="/Users/jakubhypki/.dotnet/packs/Microsoft.NETCore.App.Ref/8.0.11/ref/net8.0/System.ComponentModel.Annotations.dll" /&gt;
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9c54e4c6_002D8083_002D4c70_002Dae61_002D7b818923f6cc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::5D5B21B3-14CE-48E7-B14A-664F46DE111F::net8.0::CodePlayground.Tests.Core.Docker.DockerManagerTests.CreateContainerParameters_WhenCalled_ReturnsCreateContainerParameters&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::5D5B21B3-14CE-48E7-B14A-664F46DE111F::net8.0::CodePlayground.Tests.Core.Docker.DockerManagerTests.RunContainerAsync_WhenCalled_ReturnsStdOutStdErrAndExitCode&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+  &lt;Project Location="/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Tests" Presentation="&amp;lt;CodePlayground.Tests&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

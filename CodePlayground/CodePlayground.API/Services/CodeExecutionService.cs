@@ -5,7 +5,7 @@ using CodePlayground.Core.Models;
 
 namespace CodePlayground.API.Services;
 
-public class CodeExecutionService(IDockerManager dockerManager) : ICodeExecutionService
+public class CodeExecutionService(IDockerManager dockerManager, ILanguageHandlerFactory languageHandlerFactory) : ICodeExecutionService
 {
     public async Task<CodeExecutionResult> ExecuteCodeAsync(CodeExecutionRequest request)
     {
@@ -13,14 +13,12 @@ public class CodeExecutionService(IDockerManager dockerManager) : ICodeExecution
             !Enum.IsDefined(typeof(SupportedLanguages), parsedLanguage))
             throw new ArgumentException($"Unsupported language: {request.Language}");
 
-        var handler = LanguageHandlerFactory.GetHandler(parsedLanguage);
+        var handler = languageHandlerFactory.GetHandler(parsedLanguage);
 
         var image = handler.GetDockerImage();
-
         var command = handler.GetExecutionCommand(request.Code ?? string.Empty);
 
         var containerConfig = await dockerManager.CreateContainerParameters(image, command);
-
         var (stdout, stderr, exitCode) = await dockerManager.RunContainerAsync(containerConfig);
 
         return new CodeExecutionResult

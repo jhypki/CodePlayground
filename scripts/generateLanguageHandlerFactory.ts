@@ -13,9 +13,9 @@ using CodePlayground.Core.Interfaces;
 using CodePlayground.Core.Languages;
 
 namespace CodePlayground.Core.Factories;
-public abstract class LanguageHandlerFactory
+public abstract class LanguageHandlerFactory : ILanguageHandlerFactory
 {
-    public static ILanguageHandler GetHandler(SupportedLanguages language)
+    public ILanguageHandler GetHandler(SupportedLanguages language)
     {
         return language switch
         {

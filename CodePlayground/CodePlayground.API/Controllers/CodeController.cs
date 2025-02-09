@@ -11,7 +11,14 @@ public class CodeController(ICodeExecutionService codeExecutionService) : Contro
     [HttpPost("execute")]
     public async Task<IActionResult> ExecuteCode([FromBody] CodeExecutionRequest request)
     {
-        var result = await codeExecutionService.ExecuteCodeAsync(request);
-        return Ok(result);
+        try
+        {
+            var result = await codeExecutionService.ExecuteCodeAsync(request);
+            return Ok(result);
+        }
+        catch (Exception)
+        {
+            return BadRequest();
+        }
     }
 }
