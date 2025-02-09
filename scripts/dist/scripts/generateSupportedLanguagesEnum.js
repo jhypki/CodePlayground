@@ -8,7 +8,7 @@ const path_1 = __importDefault(require("path"));
 const fs_1 = __importDefault(require("fs"));
 const languages_json_1 = __importDefault(require("../languages.json"));
 const generateSupportedLanguagesEnum = () => {
-    const enumsDir = path_1.default.join(process.cwd(), "../CodePlayground.Core/Enums");
+    const enumsDir = path_1.default.join(process.cwd(), "../CodePlayground/CodePlayground.Core/Enums");
     const fileContent = `using System.Runtime.Serialization;
 
 namespace CodePlayground.Core.Enums;

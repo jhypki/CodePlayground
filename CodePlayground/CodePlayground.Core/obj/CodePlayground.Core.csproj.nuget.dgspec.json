@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj": {}
+    "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj": {}
   },
   "projects": {
-    "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj": {
+    "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj",
+        "projectUniqueName": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj",
         "projectName": "CodePlayground.Core",
-        "projectPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj",
+        "projectPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj",
         "packagesPath": "/Users/jakubhypki/.nuget/packages/",
-        "outputPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/obj/",
+        "outputPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jakubhypki/.nuget/NuGet/NuGet.Config"

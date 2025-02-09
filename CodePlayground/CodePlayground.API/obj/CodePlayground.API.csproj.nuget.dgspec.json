@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.API/CodePlayground.API.csproj": {}
+    "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.API/CodePlayground.API.csproj": {}
   },
   "projects": {
-    "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.API/CodePlayground.API.csproj": {
+    "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.API/CodePlayground.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.API/CodePlayground.API.csproj",
+        "projectUniqueName": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.API/CodePlayground.API.csproj",
         "projectName": "CodePlayground.API",
-        "projectPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.API/CodePlayground.API.csproj",
+        "projectPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.API/CodePlayground.API.csproj",
         "packagesPath": "/Users/jakubhypki/.nuget/packages/",
-        "outputPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.API/obj/",
+        "outputPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jakubhypki/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj": {
-                "projectPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj"
+              "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj": {
+                "projectPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj": {
+    "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj",
+        "projectUniqueName": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj",
         "projectName": "CodePlayground.Core",
-        "projectPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj",
+        "projectPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Core/CodePlayground.Core.csproj",
         "packagesPath": "/Users/jakubhypki/.nuget/packages/",
-        "outputPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.Core/obj/",
+        "outputPath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jakubhypki/.nuget/NuGet/NuGet.Config"

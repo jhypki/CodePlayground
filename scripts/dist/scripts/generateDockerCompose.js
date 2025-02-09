@@ -12,7 +12,7 @@ const generateDockerCompose = () => {
     image: codeplayground
     build:
       context: .
-      dockerfile: CodePlayground.API/Dockerfile
+      dockerfile: CodePlayground/CodePlayground.API/Dockerfile
     ports:
       - "8080:8080"
     environment:

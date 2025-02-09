@@ -76,7 +76,7 @@ Below is the list of supported languages, taken from \`languages.json\`:
 `;
     // 2) Append each language's info from JSON
     for (const lang of languages_json_1.default) {
-        content += `- **${lang.name}** (image: \`${lang.dockerImage}\`, file extension: \`.${lang.fileExtension}\`)\n`;
+        content += `- **${lang.name}** (image: \`${lang.dockerImage}\`, language: \`${lang.language}\`)\n`;
     }
     // 3) Optionally add more content, e.g. a license or contact info:
     content += `

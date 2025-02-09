@@ -4,7 +4,7 @@ using Docker.DotNet.Models;
 
 namespace CodePlayground.Core.Docker;
 
-public class DockerManager(DockerClient dockerClient) : IDockerManager
+public class DockerManager(IDockerClient dockerClient) : IDockerManager
 {
     public async Task<CreateContainerParameters> CreateContainerParameters(string imageName, string command)
     {

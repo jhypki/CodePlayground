@@ -8,7 +8,7 @@ const path_1 = __importDefault(require("path"));
 const fs_1 = __importDefault(require("fs"));
 const languages_json_1 = __importDefault(require("../languages.json"));
 const generateHandlers = () => {
-    const handlersDir = path_1.default.join(process.cwd(), "../CodePlayground.Core/Languages");
+    const handlersDir = path_1.default.join(process.cwd(), "../CodePlayground/CodePlayground.Core/Languages");
     for (const language of languages_json_1.default) {
         fs_1.default.mkdirSync(handlersDir, { recursive: true });
         const fileContent = `using CodePlayground.Core.Enums;

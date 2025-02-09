@@ -141,41 +141,5 @@
         "additionalDockerCommands": [],
         "fileExtension": "jl",
         "template": "{code}"
-    },
-    {
-        "language": "haskell",
-        "name": "Haskell",
-        "dockerImage": "haskell:9.0",
-        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/script.hs && runhaskell /code/script.hs",
-        "additionalDockerCommands": [],
-        "fileExtension": "hs",
-        "template": "{code}"
-    },
-    {
-        "language": "lua",
-        "name": "Lua",
-        "dockerImage": "lua:5.4",
-        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/script.lua && lua /code/script.lua",
-        "additionalDockerCommands": [],
-        "fileExtension": "lua",
-        "template": "{code}"
-    },
-    {
-        "language": "groovy",
-        "name": "Groovy",
-        "dockerImage": "groovy:3.0",
-        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/script.groovy && groovy /code/script.groovy",
-        "additionalDockerCommands": [],
-        "fileExtension": "groovy",
-        "template": "{code}"
-    },
-    {
-        "language": "c",
-        "name": "C",
-        "dockerImage": "gcc:11",
-        "runCommand": "mkdir -p /code && echo \\\"{base64Code}\\\" | base64 -d > /code/main.c && cd /code && gcc main.c -o main && ./main",
-        "additionalDockerCommands": [],
-        "fileExtension": "c",
-        "template": "{code}"
     }
 ]

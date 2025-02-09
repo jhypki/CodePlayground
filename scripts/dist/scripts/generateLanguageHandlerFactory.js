@@ -8,7 +8,7 @@ const path_1 = __importDefault(require("path"));
 const fs_1 = __importDefault(require("fs"));
 const languages_json_1 = __importDefault(require("../languages.json"));
 const generateLanguageHandlerFactory = () => {
-    const factoriesDir = path_1.default.join(process.cwd(), "../CodePlayground.Core/Factories");
+    const factoriesDir = path_1.default.join(process.cwd(), "../CodePlayground/CodePlayground.Core/Factories");
     const fileContent = `using CodePlayground.Core.Enums;
 using CodePlayground.Core.Interfaces;
 using CodePlayground.Core.Languages;

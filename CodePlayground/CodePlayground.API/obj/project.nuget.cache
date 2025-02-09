@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H+N0EwEHPeQ=",
+  "dgSpecHash": "8E4/2fy5DhI=",
   "success": true,
-  "projectFilePath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground.API/CodePlayground.API.csproj",
+  "projectFilePath": "/Users/jakubhypki/Dev/CodePlayground/CodePlayground/CodePlayground.API/CodePlayground.API.csproj",
   "expectedPackageFiles": [
     "/Users/jakubhypki/.nuget/packages/docker.dotnet/3.125.15/docker.dotnet.3.125.15.nupkg.sha512",
     "/Users/jakubhypki/.nuget/packages/microsoft.aspnetcore.openapi/8.0.11/microsoft.aspnetcore.openapi.8.0.11.nupkg.sha512",

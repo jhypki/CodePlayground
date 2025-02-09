@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dea57676-e926-415d-bed0-2d042bfafc97" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/codeplayground-ui/src/config/languages.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeplayground-ui/src/types/Language.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generate.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generate.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/BashHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/CSharpHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/ElixirHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/GoHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/JavaHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/JavaScriptHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/JuliaHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/KotlinHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/PHPHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/PerlHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/PythonHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/RubyHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/RustHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/SwiftHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePlayground.Core/Languages/TypeScriptHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dist/languages.json" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dist/languages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dist/scripts/generateDockerCompose.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dist/scripts/generateDockerCompose.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dist/scripts/generateHandlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dist/scripts/generateHandlers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dist/scripts/generateLanguageHandlerFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dist/scripts/generateLanguageHandlerFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dist/scripts/generateReadme.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dist/scripts/generateReadme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dist/scripts/generateSupportedLanguagesEnum.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dist/scripts/generateSupportedLanguagesEnum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/.prettierrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/eslint.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/assets/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/assets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/TheWelcome.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/WelcomeItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/__tests__/HelloWorld.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/icons/IconCommunity.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/icons/IconDocumentation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/icons/IconEcosystem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/icons/IconSupport.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/icons/IconTooling.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/router/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/stores/counter.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/views/AboutView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/views/HomeView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/tsconfig.node.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/tsconfig.vitest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/vite.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/vitest.config.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Options API Component" />
+        <option value="Vue Composition API Component" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myAllFileTypesSelected" value="true" />
+    <option name="mySelectedFileTypes">
+      <set />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jhypki"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jhypki/CodePlayground.git",
+    "accountId": "4c565179-0f64-43c3-a829-4e1e9168b8c8"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2s8AkKuEpcKvjaUrM1GcqTPujDK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Shell Script.run_scripts.sh.executor": "Run",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/jakubhypki/Dev/CodePlayground",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/jakubhypki/Dev/CodePlayground/ui/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/jakubhypki/Dev/CodePlayground/scripts/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Options API Component",
+      "Vue Composition API Component"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="run_scripts.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/generate.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.run_scripts.sh" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dea57676-e926-415d-bed0-2d042bfafc97" name="Changes" comment="" />
+      <created>1737826970116</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737826970116</updated>
+      <workItem from="1737826971179" duration="11116000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
